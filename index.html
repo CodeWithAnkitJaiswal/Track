@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Progress Tracker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+    <link rel="stylesheet" href="style_do.css">
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="https://youtube.com/@ankit_jais" target="_blank"><img src="/logo-color.png" alt="SSS"></a>
+        </div>
+        <ul>
+            <li><a href="/index.html" style="color: #eaff07;">Tracker</a></li>
+            <li><a href="/syllabus.html">Syllabus</a></li>
+            <li><a href="/books.html">Books</a></li>
+            <li><a href="/test">Test</a></li>
+            <li><a href="/info.html">Info</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container-1">
+        <h1>IIT-JEE / Neet Prepration Tracker</h1>
+        <form id="marks-form">
+            <label for="marks-input">Enter Your Today's Efficiency</label>
+            <input type="number" id="marks-input" name="marks" required>
+            <div class="btn">
+                <button id="submit" type="submit" onclick="window.location.reload(true)">Submit</button>
+                <button type="reset" id="clear-graph" data-toggle="marks-chart" data-target="#clear-list" onclick="window.location.reload(true)">Clear Graph</button>
+            </div>
+        </form>
+        <div id="progress-info"></div>
+        <canvas id="marks-chart"></canvas>
+    </div>
+    <!-- partial:index.partial.html -->
+    <div class="container animated fadeIn">
+        <div class="row">
+            <div class="col mx-auto col-md-8 mt-4 text-center">
+
+                <!-- Logo icon -->
+                <i id="main-icon" class="far fa-clipboard"></i>
+
+                <!-- List Title -->
+                <h3 id="main-label" class="mb-4">To-Do List</h3>
+
+                <!-- Form start -->
+                <form id="itemForm" class="my-3">
+                    <div class="input-group">
+
+                        <!-- List input -->
+                        <input type="text" class="form-control" id="itemInput" placeholder="New task..." />
+                        <div class="input-group-append">
+                            <button class="btn btn-primary font-weight-bold" type="submit">
+										Add Task
+						</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- end of form -->
+
+                <!-- Item List -->
+                <div class="item-container">
+                    <div class="item-list my-4 list-group list-group-flush">
+                        <!-- Single item template. See index.js -->
+                    </div>
+                    <button type="button" class="btn btn-warning shadow font-weight-bold" id="clear-list-btn" data-toggle="modal" data-target="#clear-list">
+								Clear List
+				</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="clear-list">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center">
+                        Delete To-Do List
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure?</p>
+                    <div class="inline">
+                        <button type="button" id="delete-list" class="btn btn-secondary" data-dismiss="modal" aria-label="Delete" value="true">
+									Delete
+					</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Cancel">
+									Cancel
+					</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="marks-data.js"></script>
+    <script src="chart.js"></script>
+    <form action="file.php" method="post"></form>
+
+
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/popper.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script>
+    <script src="script_do.js"></script>
+
+</body>
+
+</html>

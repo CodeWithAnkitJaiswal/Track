@@ -1,0 +1,128 @@
+.container-1 {
+    max-width: 62.5rem;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.info {
+    padding: 1rem;
+    display: flex;
+    font-family: cursive;
+    color: rgb(253, 85, 24);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ToDoComp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.to-do-input {
+    margin: 20px;
+}
+
+.info h3 {
+    font-size: 1.75rem;
+    text-align: center;
+    color: #f7ff07;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: cursive;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+}
+
+#clear-graph {
+    padding: 0.1rem 0.8rem;
+    margin: 0.8rem;
+    font-size: 1.2rem;
+    background-color: #e0375c;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#clear-graph:hover {
+    background-color: #f10505;
+}
+
+#submit {
+    padding: 0.2rem 1.2rem;
+    margin: 0.8rem;
+    font-size: 1.2rem;
+    background-color: #7fd930;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#submit:hover {
+    background-color: #25f105;
+}
+
+canvas {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: block;
+    height: 70rem;
+}
+
+input[type="number"] {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 10px;
+}

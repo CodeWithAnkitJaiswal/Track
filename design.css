@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive, monospace, sans-serif;
+    list-style: none;
+}
+
+nav {
+    background: #fb0046;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav img {
+    width: 2.8rem;
+    border-radius: 50%;
+}
+
+nav ul {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+}
+
+nav ul li a {
+    color: antiquewhite;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #eaff07;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+
+/* for books */
+
+.alert {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert span {
+    background: white;
+    width: 40rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 180px;
+}

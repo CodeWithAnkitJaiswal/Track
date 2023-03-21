@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(26 177 235);
+}
+
+.row {
+    height: 100vh;
+}
+
+
+/* Main Icon */
+
+#main-icon {
+    font-size: 3em;
+    text-shadow: 0px 3px 2px rgb(43, 43, 43, 0.5);
+}
+
+
+/* Main Title */
+
+#main-label {
+    font-family: "Permanent Marker", cursive;
+    font-size: 2em;
+    text-shadow: 0px 3px 2px rgb(43, 43, 43, 0.5);
+}
+
+
+/* Form text input */
+
+#itemInput {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Empty text warning */
+
+.add-text::placeholder {
+    color: red;
+}
+
+
+/* List items */
+
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-name {
+    margin: 0;
+    padding: 3px 0;
+}
+
+.visibility {
+    opacity: 0.5;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+
+/* Icon color and size */
+
+.item-icons {
+    font-size: 1.2rem;
+}
+
+.fa-check-circle {
+    color: limegreen;
+}
+
+.fa-edit {
+    color: dodgerblue;
+}
+
+.fa-trash-alt {
+    color: tomato;
+}
+
+
+/* Larger Screens */
+
+@media (min-width: 700px) {
+    .container {
+        height: 100%;
+    }
+    #main-icon {
+        font-size: 5em;
+    }
+    #main-label {
+        font-size: 2.5em;
+    }
+}

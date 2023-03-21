@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Learning Tracker</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Student Learning Tracker</h1>
+	
+	<form method="post" action="store_data.php">
+		<label for="subject">Choose a Subject:</label>
+		<select name="subject" id="subject">
+			<option value="physics">Physics</option>
+			<option value="chemistry">Chemistry</option>
+			<option value="maths">Maths</option>
+		</select>
+
+		<label for="chapter">Choose a Chapter:</label>
+		<select name="chapter" id="chapter">
+			<!-- The options will be added dynamically using JavaScript -->
+		</select>
+
+		<button type="button" id="select-all-btn">Select All</button>
+		<button type="submit">Save Progress</button>
+	</form>
+
+	<script src="script.js"></script>
+</body>
+</html>
+
+
+
+/* Styles for the form */
+form {
+	margin: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+select {
+	margin-right: 10px;
+}
+
+button {
+	margin-left: 10px;
+}
+
+/* Styles for the chapters checkboxes */
+.chapter-checkbox {
+	display: block;
+	margin-bottom: 5px;
+	margin-left: 20px;
+}
+
+/* Styles for the completed chapters */
+.completed-chapter {
+	text-decoration: line-through;
+}
+
+
+
+
+const subjectSelect = document.getElementById('subject');
+const chapterSelect = document.getElementById('chapter');
+const selectAllBtn = document.getElementById('select-all-btn');
+
+// Chapters for each subject
+const chapters = {
+	physics: ['Chapter 1', 'Chapter 2', 'Chapter 3'],
+	chemistry: ['Chapter 1', 'Chapter 2', 'Chapter 3', 'Chapter 4'],
+	maths: ['Chapter 1', 'Chapter 2', 'Chapter 3', 'Chapter 4', 'Chapter 5']
+};
+
+// Add options to the chapter select based on the selected subject
+subject
